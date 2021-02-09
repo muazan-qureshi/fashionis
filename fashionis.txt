@@ -1,0 +1,9 @@
+SELECT roletype.roletype, accounts.username from roletype INNER JOIN accounts on accounts.roletypeid = roletype.id WHERE accounts.accountstatus = 0 and roletype.rolestatus = 1 or accounts.id > 0
+
+SELECT roletype.roletype, accounts.username from roletype INNER JOIN accounts on accounts.roletypeid = roletype.id WHERE accounts.accountstatus = 1 and roletype.rolestatus = 1 and accounts.username = 'ahmed1' AND pass = '123'
+
+
+
+
+
+SELECT roletype.roletype, accounts.username from roletype INNER JOIN accounts on accounts.roletypeid = roletype.id
